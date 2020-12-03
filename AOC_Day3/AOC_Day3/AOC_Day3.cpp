@@ -7,6 +7,17 @@
 #include <vector>
 #include <string>
 #include <sstream>
+#include <utility>
+
+// ideas to speed up:
+// iterate through all lines of field
+// maintain current positions for each slope, starting at 0, 0
+//    for each path:
+//    if y position on current line
+//    calculate tree
+//    move position by slope
+
+
 
 int numTrees(const std::vector<std::string> & path, const int & deltaX, const int & deltaY) {
 	auto posX = 0, posY = 0, trees = 0;
